@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+        <head>
+            <meta name="author" content="Ariel binder" />
+            <meta name="description" content="HTML structure file" />
+            <meta name="dotnet test" details="sorting moudle" />
+            <title>מבחן מסכם</title>
+            <script>
+                //פונקציות
+               function isBigger(params) 
+                {
+                    //תרגיל 1
+                    var num = prompt("please enter a number");
+                    num=Number(num);
+                   if(  num  <= 100)
+                   console.log('small');                   
+                    else if(num >= 101 && num <= 1000)
+                       console.log('medium');
+                    else if(num > 1000)
+                     console.log('large');
+                    else
+                        alert("you must enter a number!")    
+                }
+               function FullName()
+               {
+                //תרגיל 2
+                var FirstName = prompt("תקליד את שמך הפרטי")
+                var LastName = prompt("תקליד את שם המשפה שלך")
+                alert('שלום'+' '+FirstName+' '+LastName+','+' ' +'ברוך שובך למערכת');
+               } 
+               function PASSWORD()
+               {
+                var password = prompt("please enter your password");
+                //תרגיל 3
+                    if (password == "hackeru123456")
+                        alert("הזיהוי בוצע בהצלחה");
+                    else
+                       alert("הסיסמה שגויה, יש צורך בזיהוי");
+               }
+                    function AGEENTER()
+                    {
+                        //תרגיל 4
+                        var age = prompt("what is your age")
+                        age = Number(age);
+                        if (age < 16)
+                            alert("אינך מורשה להיכנס");
+                      else if(age >=  16 && age <=  18)
+                            alert("אתה רשאי להיכנס באישור הורה");
+                        else if(age > 18 )
+                            alert("אתה מוזמן להצטרף");
+                        else
+                            alert("your input is not vaild!");
+                    }
+                    function Operator()
+                    {
+                        //תרגיל 5
+                       var num1 = prompt("enter your 1st number");
+                       var num2 = prompt("enter your 2nd number");
+                       var num3 = prompt("enter your 3rd number");
+                       console.log(num1);
+                       console.log(num2);
+                       console.log(num3);
+                       var operator = prompt("+ or -");
+                       num1 = Number(num1);
+                       num2 = Number(num2);
+                       num3 = Number(num3);
+                       if (operator == "+")
+                        {
+                            var sum = num1 + num2 + num3;
+                            console.log(sum);
+                        }
+                            
+                        else if (operator == "-") 
+                        {
+                            var sub = num1 - num2 - num3;
+                            console.log(sub);
+                        }
+                        else
+                        {
+                            alert("worng input!");
+                        }
+                        
+                     }
+            </script>
+        </head>
+    <body style="background-color: rgb(19, 21, 104); color: rgb(202, 126, 32); font-size: 20px; text-align: center;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"></body>
+        <p> אריאל בינדר</p>     <!--שם מלא---->
+        <p>0542006783</p>         <!--מספר טלפון--->
+        <p> למידה מקוונת דרך הזום</p> <!---הדבר הכי מורכב---->
+        <p>כתיבת קוד - לראות שהקוד שלי רץ ועובד</p>               <!--דבר הכי מהנה--->
+        <p>  כן, תחום מעניין ואני אוהב להתעסק בתוכנה, אני חושב שהתחום הזה יקדם אותי בעתיד</p>   <!--האם ולמה התחום מתאים לי--->
+        <p>המרצה:אבי בוכריס אחד התותחים שיש, ניהל את השיעור כראוי,  ענה לכל השאלות במהלך השיעור וגם הקדיש זמן לשאלות בסוף השיעור</p>   <!----סיכום שלב המיון-->
+        <!---כפתורים--->
+     <br>
+       <button ondblclick="isBigger()">EX.1</button>
+        </br>
+        <button ondblclick="FullName()">EX.2</button>
+        <br>
+        <button ondblclick="PASSWORD()">EX.3</button>
+        </br>
+        <button ondblclick="AGEENTER()">EX.4</button>
+        <br>
+        <button ondblclick="Operator()">EX.5</button>
+        </br>
+    </body>
+</html>
